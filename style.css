@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.center {
+  padding-left: calc(50% - 720px);
+  padding-right: calc(50% - 720px);
+}
+
+a {
+  text-decoration: none;
+}
+
+.top {
+  position: relative;
+  height: 1024px;
+  flex-shrink: 0;
+  background-image: url(img/top_picture.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.top__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 120px;
+  padding-top: 217px;
+  box-sizing: border-box;
+}
+.top__title {
+  position: absolute;
+  color: #ffffff;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.top__text {
+  position: absolute;
+  top: 374px;
+  color: #ffffff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+}
+.top__text_highlighter {
+  font-weight: 700;
+}
+.top__button {
+  width: 234.063px;
+  height: 48.603px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: #9C0332;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  top: 482px;
+}
+.top__button:hover {
+  background: #EB443F;
+}
+
+.bottom {
+  height: 556px;
+  flex-shrink: 0;
+  background: #000915;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.bottom__link {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding-left: 32px;
+  padding-bottom: 32px;
+  color: #ffffff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 133.333% */
+  width: 379px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(<path-to-image>), lightgray 50%/cover no-repeat;
+}
+.bottom__link_picture_1 {
+  background-image: url(img/picture_1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bottom__link_picture_2 {
+  background-image: url(img/picture_2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bottom__link_picture_3 {
+  background-image: url(img/picture_3.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bottom__link:hover {
+  border-radius: 16px;
+  border: 3px solid #44D2FF;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(<path-to-image>), lightgray 50%/cover no-repeat;
+}/*# sourceMappingURL=style.css.map */
