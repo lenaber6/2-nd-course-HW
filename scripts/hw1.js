@@ -67,5 +67,4 @@ alert(user[info]);
 
 //Task 10
 let name = prompt('Как Ваше имя?');
-let userName = 'name';
-console.log(`Привет, ${userName}!`);
+alert(`Привет, ${name}!`);
