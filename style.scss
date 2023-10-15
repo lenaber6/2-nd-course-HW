@@ -73,6 +73,10 @@ a {
         line-height: normal;
         position: absolute;
         top: 482px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
 
         &:hover {
             background: #EB443F;
@@ -136,3 +140,5 @@ a {
         }
      }
 }
+
+@import 'mobile';
