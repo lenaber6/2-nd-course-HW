@@ -6,8 +6,8 @@ while (i<2) {
 }
 
 //Task 2
-let c = '1';
-while (c<= '5') {
+let c = 1;
+while (c<= 5) {
     console.log(c);
     i++;
 }
