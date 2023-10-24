@@ -16,7 +16,7 @@ console.log(whatIsLess (6, 6));
 'use strict';
 function isEven(d) {
     let result;
-    if (d % 2 ==0) {
+    if (d % 2 ===0) {
         result = "Чётное число";
         } else {
         result = "Нечётное число";
@@ -27,22 +27,23 @@ console.log(isEven(16));
 console.log(isEven(17));
 
 //Task 3
-function findSquare1(n) {
-    let result = n**2;
+function printSquare1(n) {
+    const result = n**2;
     console.log(result);
 }
-function findSquare2(y) {
-    let result2 = y**2;
+function getSquare2(y) {
+    const result2 = y**2;
     return result2;
 }
-findSquare1(7);
-console.log(findSquare2(5));
+printSquare1(7);
+console.log(getSquare2(5));
 
 
 
 //Task 4
-let userAge = prompt('Сколько вам лет?');
+
 function age(number) {
+    let userAge = prompt('Сколько вам лет?');
     if (number>=0 && number<=12) {
         alert('Привет, друг!');
     } else if (number>=13) {
@@ -109,9 +110,9 @@ function monthNumber(j){
     const month = Number(j);
     if (month === 12 || month ===1 || month ===2) {
        return 'Зима'; 
-    } else if (month === 3 || month ===4 || month ===5){
+    } else if (month >= 3 && month <=5){
        return 'Весна';   
-    } else if (month === 6 || month ===7 || month ===8) {
+    } else if (month >= 6 && month <= 8) {
        return 'Лето';   
     }else if (month === 9 || month ===10 || month ===11) {
        return 'Осень';   
