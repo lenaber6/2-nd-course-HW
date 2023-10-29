@@ -1,3 +1,4 @@
+'use strict';// use strict помещать в самое начало файла для корректной работы.
 //Task 1
 
 function whatIsLess(a, b) {
@@ -41,9 +42,7 @@ console.log(getSquare2(5));
 
 
 //Task 4
-
-function age(number) {
-    let userAge = prompt('Сколько вам лет?');
+function printAge(number) {
     if (number>=0 && number<=12) {
         alert('Привет, друг!');
     } else if (number>=13) {
@@ -52,7 +51,7 @@ function age(number) {
         alert('Вы ввели неправильное значение!');
     } 
 }
-age(userAge);
+printAge(number(prompt('Сколько вам лет?')));
 
 //Task 5
 function isNumber(a, b) {
@@ -82,11 +81,11 @@ console.log(cub(prompt('Введите число n')));
 
 //Task 7
 function getArea() {
-    return  3.14 * (this.radius**2);
+    return  Math.PI * (this.radius**2);// Math.PI = 3.14, число Пи
 
 }
 function getPerimeter() {
-   return  2 * 3.14 * this.radius; 
+   return  2 * Math.PI * this.radius; 
 }
 const circle1 = {
     radius: 2,
