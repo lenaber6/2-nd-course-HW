@@ -66,7 +66,7 @@
         flex-direction: column;
         align-items: center;
 
-        &__advert_1 {
+        &__advert1 {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -75,16 +75,17 @@
             justify-content: center;
 
             &_title {
-                top: 2257px;
+                top: 2297px;
                 font-size: 32px;
                 text-align: center;
             }
 
             &_text {
                 display: none;
-                &_mob {
+            }
+            &_mob {
                     position: absolute;
-                    top: 2078px;
+                    top: 2378px;
                     color: $color-text;
                     font-style: normal;
                     font-weight: 300;
@@ -94,8 +95,6 @@
                     text-align: center;
                 }
 
-            }
-
             &_button {
                 position: absolute;
                 top: 2505px;
@@ -103,10 +102,65 @@
         }
 
 
-        &__advert_2 {
+        &__advert2 {
             width: 344px;
             height: 236px;
             flex-shrink: 0;
         }
     }
+}
+
+.game2 {
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 654px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__advert_1 {
+        width: 344px;
+        height: 231px;
+        flex-shrink: 0;
+        position: absolute;
+        top: 3193px;
+    }
+    &__advert_2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        -moz-column-gap: 32px;
+        column-gap: 32px;
+        justify-content: center;
+
+        &_title {
+            top: 2944px;
+            font-size: 32px;
+            text-align: center;
+        }
+
+        &_text {
+            display: none;
+        }
+        &_mob {
+                position: absolute;
+                top: 3004px;
+                color: $color-text;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 22px;
+                /* 157.143% */
+                text-align: center;
+            }
+
+        &_button {
+            position: absolute;
+            top: 3100px;
+            left: 68px;
+        }
+    }
+
+
+   
 }

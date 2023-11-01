@@ -151,7 +151,7 @@ a {
     justify-content: space-around;
     align-items: center;
 
-    &__advert_1 {
+    &__advert1 {
         width: 584px;
         height: 235px;
         display: flex;
@@ -204,7 +204,7 @@ a {
         }
     }
 
-    &__advert_2 {
+    &__advert2 {
         width: 485px;
         height: 333px;
         background-image: url(img/game4.png);
@@ -212,6 +212,86 @@ a {
         background-position: center;
         background-size: cover;
     }
+}
+
+.game2 {
+    height: 800px;
+    background: #000915;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    &__advert_1 {
+        width: 481px;
+        height: 322px;
+        background-image: url(img/game5.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__advert_2 {
+        width: 588px;
+        height: 236px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        column-gap: 32px;
+
+        &_title {
+            color: $color-text;
+            position: absolute;
+            top: 2664px;
+            left: 2032px;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        &_text {
+            top: 2753px;
+            left: 2032px;
+            position: absolute;
+            color: $color-text;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 32px;
+            /* 177.778% */
+        }
+        &_mob{
+            display: none;
+        }
+
+        &_button {
+            position: absolute;
+            top: 2849px;
+            left: 2032px;
+            width: 240px;
+            height: 48.603px;
+            flex-shrink: 0;
+            border-radius: 30px;
+            background: #9C0332;
+            color: $color-text;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+
+            &:hover {
+                background: #EB443F;
+            }
+        }
+    }
+
+
 }
 
 @import 'mobile';
