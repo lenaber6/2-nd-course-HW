@@ -29,13 +29,13 @@ if (answerUser.toLowerCase() === answer.toLowerCase()) { // проверяем, 
 }
 
 // Task 2
-const products = ['конфеты Мишка', 'МАК КОНФЕТЫ', 'пастила Конус', 'КоНфЕтЫ Дружок', 'конфета Джек'];
-const search = 'конфеты'; 
-products.forEach((product) => {
-	if (product.toLowerCase().startsWith(search.toLowerCase())) {
-       return product;
-        }
-});
+function filterStr(array, searchWord) {
+  return array.filter((product) => 
+	product.toLowerCase().startsWith(searchWord.toLowerCase())) ;  
+}
+console.log(filterStr(['конфеты Мишка', 'МАК КОНФЕТЫ', 'пастила Конус', 'КоНфЕтЫ Дружок', 'конфета Джек'], 'конфеты'));
+// Текущий код не будет работать корректно, так как функция forEach не предназначена для возврата значения (лучше воспользоваться filter). Также код нужно обернуть в отдельную функцию, как это требуется по условию задачи.
+
 
 // Task 3
    const numeral = 32.58884;
@@ -46,7 +46,7 @@ console.log(result1);
 console.log(result2);
 console.log(result3);
 
-// Task 4
+// Task 4A
 const array = [52, 53, 49, 77, 21, 32];
 let result4;
 let result5;
@@ -57,6 +57,16 @@ for (let i = 0; i < array.length; i++) {
 }
      console.log(result4);
      console.log(result5);  
+// Цикл здесь не нужен, так как Math.min и Math.max можно применить один раз. Код внутри цикла неэффективен и будет возвращать один и тот же результат на каждой итерации.
+
+
+     // Task 4B
+
+     const arr = [52, 53, 49, 77, 21, 32];
+     let result6 = Math.min(...arr);
+     let result7 = Math.max(...arr);
+          console.log(result6);
+          console.log(result7);    
 
 // Task 5
 function getRandom(minValue, maxValue) {
