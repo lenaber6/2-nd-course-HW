@@ -135,7 +135,7 @@ a {
   justify-content: space-around;
   align-items: center;
 }
-.game1__advert_1 {
+.game1__advert1 {
   width: 584px;
   height: 235px;
   display: flex;
@@ -144,7 +144,7 @@ a {
   -moz-column-gap: 32px;
        column-gap: 32px;
 }
-.game1__advert_1_title {
+.game1__advert1_title {
   color: #ffffff;
   position: absolute;
   font-size: 48px;
@@ -152,7 +152,7 @@ a {
   font-weight: 700;
   line-height: normal;
 }
-.game1__advert_1_text {
+.game1__advert1_text {
   top: 1953px;
   position: absolute;
   color: #ffffff;
@@ -162,7 +162,7 @@ a {
   line-height: 32px;
   /* 177.778% */
 }
-.game1__advert_1_button {
+.game1__advert1_button {
   position: absolute;
   top: 2049px;
   width: 234.063px;
@@ -180,16 +180,84 @@ a {
   justify-content: center;
   align-items: center;
 }
-.game1__advert_1_button:hover {
+.game1__advert1_button:hover {
   background: #EB443F;
 }
-.game1__advert_2 {
+.game1__advert2 {
   width: 485px;
   height: 333px;
   background-image: url(img/game4.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.game2 {
+  height: 800px;
+  background: #000915;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.game2__advert_1 {
+  width: 481px;
+  height: 322px;
+  background-image: url(img/game5.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.game2__advert_2 {
+  width: 588px;
+  height: 236px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+.game2__advert_2_title {
+  color: #ffffff;
+  position: absolute;
+  top: 2664px;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.game2__advert_2_text {
+  top: 2753px;
+  left: 2032px;
+  position: absolute;
+  color: #ffffff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+  /* 177.778% */
+}
+.game2__advert_2_button {
+  position: absolute;
+  top: 2849px;
+  left: 2032px;
+  width: 240px;
+  height: 48.603px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: #9C0332;
+  color: #ffffff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.game2__advert_2_button:hover {
+  background: #EB443F;
 }
 
 @media (max-width: 767px) {
@@ -250,7 +318,7 @@ a {
     flex-direction: column;
     align-items: center;
   }
-  .game1__advert_1 {
+  .game1__advert1 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -258,17 +326,17 @@ a {
     column-gap: 32px;
     justify-content: center;
   }
-  .game1__advert_1_title {
-    top: 2257px;
+  .game1__advert1_title {
+    top: 2297px;
     font-size: 32px;
     text-align: center;
   }
-  .game1__advert_1_text {
+  .game1__advert1_text {
     display: none;
   }
-  .game1__advert_1_text_mob {
+  .game1__advert1_mob {
     position: absolute;
-    top: 2078px;
+    top: 2378px;
     color: #ffffff;
     font-style: normal;
     font-weight: 300;
@@ -277,13 +345,60 @@ a {
     /* 157.143% */
     text-align: center;
   }
-  .game1__advert_1_button {
+  .game1__advert1_button {
     position: absolute;
     top: 2505px;
   }
-  .game1__advert_2 {
+  .game1__advert2 {
     width: 344px;
     height: 236px;
     flex-shrink: 0;
   }
+}
+.game2 {
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 654px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.game2__advert_1 {
+  width: 344px;
+  height: 231px;
+  flex-shrink: 0;
+  position: absolute;
+  top: 3193px;
+}
+.game2__advert_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -moz-column-gap: 32px;
+  column-gap: 32px;
+  justify-content: center;
+}
+.game2__advert_2_title {
+  top: 2944px;
+  font-size: 32px;
+  text-align: center;
+}
+.game2__advert_2_text {
+  display: none;
+}
+.game2__advert_2_mob {
+  position: absolute;
+  top: 3004px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  /* 157.143% */
+  text-align: center;
+}
+.game2__advert_2_button {
+  position: absolute;
+  top: 3100px;
+  left: 68px;
 }/*# sourceMappingURL=style.css.map */
